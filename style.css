@@ -85,24 +85,10 @@
 
 /* STUFF FROM TOP RIGHT END */
 
-
 /* STUFF FROM CENTER START */
 
 .center {
     grid-area: 2/1/3/4;
-}
-
-.btm-center {
-    grid-area: 3/1/4/4;
-    display: flex;
-    align-items: center;
-    margin: 0px auto auto auto;
-}
-
-.test {
-    border-style: solid;
-    border-color: black;
-
 }
 
 .ggl-img {
@@ -183,6 +169,15 @@ input[type="submit"]:hover {
 
 /* STUFF FROM CENTER END */
 
+/* STUFF FROM CENTER BOTTOM START */
+
+.center-btm {
+    grid-area: 3/1/4/4;
+    display: flex;
+    align-items: center;
+    margin: 0px auto auto auto;
+}
+
 .search-input-div {
     color: transparent;
     flex: 100%;
@@ -228,3 +223,5 @@ input[type="submit"]:hover {
     cursor: pointer;
     user-select: none;
 }
+
+/* STUFF FROM CENTER BOTTOM END */
