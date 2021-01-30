@@ -230,7 +230,6 @@ input[type="submit"]:hover {
     font: 16px arial,sans-serif;
 }
 
-
 .g-btn {
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
@@ -252,20 +251,71 @@ input[type="submit"]:hover {
 /* STUFF FROM BOTTOM START */
 .bottom {
     grid-area: 5/1/6/4;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .bottom-bar {
-    height: 41px;
+    grid-area: 2/1/3/3;
+    margin-top: 49.797px;
     background: #f2f2f2;
     line-height: 40px;
     min-width: 980px;
     border-top: 1px solid #dadce0;
-    min-width: 400px;
-    font-size: 10pt;
     color: rgba(0,0,0,.54);
-    padding-left: 27px;
-    margin-left: 30px;
     text-align: left;
+}
+
+.btm-links-div {
+    height: 41px;
+    min-width: 400px;
+    font-family: arial,sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    word-wrap: break-word;
+}
+
+@media (max-width: 805px) {
+    .btm-links-div {
+        text-align: center;
+    }
+}
+
+
+.btm-links-left-div {
+    display: inline-block;
+    position: relative;
+    line-height: 40px;
+    grid-area: 1/1/2/2;
+}
+
+.btm-links {
+    padding-left: 27px;
+    color: #70757a;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    text-decoration: none;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.btm-links:hover {
+    text-decoration: underline;
+}
+
+.btm-links-right-div {
+    float: right;
+    position: relative; 
+    margin-right: 30px;
+    line-height: 40px;
+    grid-area: 1/2/3/3;
+}
+
+.btm-links-right {
+    position: relative;
+    float: right;
+    overflow: hidden;
 }
 
 /* STUFF FROM BOTTOM END */
